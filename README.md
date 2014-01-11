@@ -1,4 +1,4 @@
-rnanwani.css3loaders.io
+CSS3 Loaders
 =======================
 
-Free CSS3 Loaders 
+A set of free CSS3 Loaders. 
