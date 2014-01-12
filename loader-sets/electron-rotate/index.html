@@ -4,16 +4,20 @@
 	<link href="css/electron-rotate-loader.css" rel="stylesheet" type="text/css" />
 </head>
 <body>
-	<div id="electron-rotate-loader">
-		<div class="container">
-			<div class="loading-text ani-blink">loading</div>
-			<div class="stick ani-continuous-rotate">
-				<span class="electron"></span>
-				<span class="electron-shadow dark-shadow"></span>
-				<span class="electron-shadow medium-shadow"></span>
-				<span class="electron-shadow light-shadow ani-electron-flicker"></span>	
+	<div class="display-container">
+		<div class="loader-container" style="background:#fafdff">
+			<div class="ghost-element"></div>
+			<div id="electron-rotate-loader">
+				<div class="loading-text ani-blink">loading</div>
+				<div class="stick ani-continuous-rotate">
+					<span class="electron"></span>
+					<span class="electron-shadow dark-shadow"></span>
+					<span class="electron-shadow medium-shadow"></span>
+					<span class="electron-shadow light-shadow ani-electron-flicker"></span>	
+				</div>
 			</div>
 		</div>
 	</div>
+
 </body>
 </html>

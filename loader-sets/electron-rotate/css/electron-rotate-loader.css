@@ -1,15 +1,31 @@
-@import url(http://fonts.googleapis.com/css?family=Alegreya+Sans);
+@import url(http://fonts.googleapis.com/css?family=Montserrat:700|Open+Sans);
 body {
-  font-family: "Alegreya Sans", "Montserrat", sans-serif;
+  font-family: "Open Sans", sans-serif;
   color: #888;
+  text-align: center;
 }
 
-.container {
+.display-container {
+  background: #FFF;
+  border:10px solid #F1F1EF;
+  padding: 10px;
+}
+
+.loader-container {
   position: relative;
-  
-  height: 60px;
-  width:60px;
-  margin: 80px auto;
+
+  height: 200px;
+  width: 100%;
+  margin: auto;
+
+  border: 1px solid #f3f3f3;
+}
+
+.ghost-element {
+  display:inline-block;
+  width:1px;
+  height:100%;
+  vertical-align:middle;
 }
 
 
@@ -18,10 +34,21 @@ body {
   font-size:12px;
   width:60px;
   text-align:center;
-  
+  color: #888;
+
   position: absolute;
   top:24px;
   left:0px;
+}
+
+
+div#electron-rotate-loader {
+  display: inline-block;
+  vertical-align: middle;
+
+  height: 60px;
+  width: 60px;
+  position: relative;
 }
 
 /*the stick which rotates*/ 

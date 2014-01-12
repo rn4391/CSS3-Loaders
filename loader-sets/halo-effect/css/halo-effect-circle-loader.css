@@ -1,15 +1,37 @@
-@import url(http://fonts.googleapis.com/css?family=Alegreya+Sans);
+@import url(http://fonts.googleapis.com/css?family=Open+Sans);
 body {
-  font-family: "Alegreya Sans", "Montserrat", sans-serif;
+  font-family: "Open Sans", sans-serif;
   color: #888;
+  text-align: center;
 }
 
-.container {
+* {
+  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+}
+
+.display-container {
+  background: #FFF;
+  border:10px solid #F1F1EF;
+  padding: 10px;
+}
+
+.loader-container {
   position: relative;
-  
-  height: 60px;
-  width:60px;
-  margin: 80px auto;
+
+  height: 200px;
+  width: 100%;
+  margin: auto;
+
+  border: 1px solid #f3f3f3;
+}
+
+.ghost-element {
+  display:inline-block;
+  width:1px;
+  height:100%;
+  vertical-align:middle;
 }
 
 
@@ -18,12 +40,23 @@ body {
   font-size:12px;
   width:60px;
   text-align:center;
-  
+  color: #888;
+
   position: absolute;
   top:24px;
   left:0px;
 }
 
+div#halo-effect-circle-loader { 
+  height: 60px;
+  width: 60px;
+
+  position: relative;
+  margin:auto;
+
+  display: inline-block;
+  vertical-align: middle;
+}
 
 .circle {
   height: 60px;
@@ -32,23 +65,19 @@ body {
   margin: auto;
 }
 
-
 .shadow-circle {
-  height: 64px;
-  width: 64px;
-  border-top: 6px solid #EB8100;
-  border-radius: 64px;
-  
-  box-model: border-box;
-  -webkit-box-model: border-box;
-  -moz-box-model: border-box;
+  height: 70px;
+  width: 70px;
+  border-top: 5px solid #EB8100;
+  border-radius: 70px;
   
   opacity: 0.4;
     
   position: absolute;
   top:-5px;
-  left:-2px;
+  left:-5px;
 }
+
 
 .ani-halo {
   animation: halo 2s infinite; 
